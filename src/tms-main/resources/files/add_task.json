@@ -1,0 +1,32 @@
+ [
+  {
+    "APPLICATION_ID":1,
+    "APPLICATION_NAME":"PACER",
+    "TASK_GROUP_ID":1,
+    "TASK_GROUP_NAME":"[AUTO] Forecast and commit process",
+    "TASK_ID":1,
+    "TASK_SEQUENCE":1,
+    "TASK_NAME":"Final Forecast Published",
+    "TASK_DESC":"Forecast file uploaded by Planners via PACER"
+  },
+  {
+    "APPLICATION_ID":1,
+    "APPLICATION_NAME":"PACER",
+    "TASK_GROUP_ID":1,
+    "TASK_GROUP_NAME":"[AUTO] Forecast and commit process",
+    "TASK_ID":2,
+    "TASK_SEQUENCE":2,
+    "TASK_NAME":"Subcon Commits Due",
+    "TASK_DESC":"Subcon receives forecast from planner and sends their commits via PACER."
+  },
+  {
+    "APPLICATION_ID":1,
+    "APPLICATION_NAME":"PACER",
+    "TASK_GROUP_ID":1,
+    "TASK_GROUP_NAME":"[AUTO] Forecast and commit process",
+    "TASK_ID":3,
+    "TASK_SEQUENCE":3,
+    "TASK_NAME":"Capital Request Review Deadline",
+    "TASK_DESC":"Managers review forecast and commit file."
+  }
+] 

@@ -1,0 +1,1734 @@
+.main .input-group-text {
+    border-radius: 0rem; 
+    text-align: left;
+    white-space: pre-wrap;
+    padding: 5px;
+    padding-top: 6px;
+    font-weight: bold !important;
+    font-size: 15px; 
+    align-items: baseline; 
+    min-height: -webkit-fill-available !important;
+}
+
+.form-control-sm {
+    font-size: 10px !important;
+}
+
+.clearfix {
+    font-size: 14px;
+}
+
+.p-2 {
+    color: white;
+}
+
+.button-icon-table {
+    width: 25px;
+    height: 25px;
+}
+/*add this to tms ppi*/
+.btn-primary:hover { 
+    background-color: #002e5e !important; 
+}
+/*add this to tms ppi*/
+.btn-success:hover { 
+    background-color: #0b601e !important; 
+}
+/*add this to tms ppi*/
+.btn-secondary:hover { 
+    background-color: #3d3e3f !important;  
+}
+/*add this to tms ppi*/
+.btn-danger:hover { 
+    background-color: #91000e !important; 
+}
+
+.tms-modal-header-edit {
+    background-color: green !important;
+}
+
+.button-new {
+    padding: 0px 0px 2px 0px !important;
+    width: 40px !important;
+}
+
+.button-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+}
+
+.button-icon-main {
+    width: 25px;
+    height: 25px;
+}
+
+.button-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+}
+
+.icon-required {
+    height: 12px;
+    width: 12px;
+    margin-right: 3px;
+}
+
+.notification-container {
+	font-size: 14px;
+	box-sizing: border-box;
+	position: fixed;
+	z-index: 999999
+}
+
+.top {
+	top: 12px; 
+    left: 30%;
+	transition: transform .6s ease-in-out;
+	animation: toast-in-top .7s;
+}
+
+.bottom {
+	bottom: 12px; 
+    left: 30%;
+	transition: transform .6s ease-in-out;
+	animation: toast-in-bottom .7s;
+}
+
+.right {
+	top: 45%;
+	right: 12px;
+	transition: transform .6s ease-in-out;
+	animation: toast-in-right .7s;
+}
+
+.left {
+	top: 45%;
+	left: 12px;
+	transition: transform .6s ease-in;
+	animation: toast-in-left .7s;
+}
+
+.top-right {
+	top: 12px;
+	right: 12px;
+	transition: transform .6s ease-in-out;
+	animation: toast-in-right .7s;
+}
+
+.bottom-right {
+	bottom: 12px;
+	right: 12px;
+	transition: transform .6s ease-in-out;
+	animation: toast-in-right .7s;
+}
+
+.top-left {
+	top: 12px;
+	left: 12px;
+	transition: transform .6s ease-in;
+	animation: toast-in-left .7s;
+}
+
+.bottom-left {
+	bottom: 12px;
+	left: 12px;
+	transition: transform .6s ease-in;
+	animation: toast-in-left .7s;
+}
+
+.notification {
+	background: #fff;
+	transition: .3s ease;
+	position: relative;
+	pointer-events: auto;
+	overflow: hidden;
+	/*margin: 0 0 6px;*/
+	padding: 10px; 
+	width: 300px;
+    height: auto;
+	/* max-height: 100px; */
+	border-radius: 3px 3px 3px 3px;
+	box-shadow: 0 0 10px black;
+	color: white;
+	opacity: .95;
+	background-position: 15px;
+	background-repeat: no-repeat;
+}
+
+.notification:hover {
+	box-shadow: 0 0 12px #fff;
+	opacity: 1;
+	cursor: pointer
+}
+
+.notification-title {
+	font-weight: 700;
+	font-size: 16px;
+	text-align: left;
+	/*margin-top: 0;
+	margin-bottom: 6px;*/
+    width: 300px;
+    height: 10px;
+}
+
+.notification-message {
+	margin: 0;
+    text-align: left;
+    height: auto;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+}
+
+.notification-image {
+    float: left;
+    margin-right: 15px; 
+    padding-top: 10px;
+}
+
+.notification-image img {
+    width: 30px;
+    height: 30px;
+    /*box-shadow: 0 0 15px white;
+    border-radius: 15px;*/
+}
+
+.toast {
+    height: 50px;
+    width: 365px;
+	color: #fff;
+	padding: 20px 15px 10px 10px;
+}
+
+.notification-container button {
+	position: relative;
+	right: -.3em;
+	top: -.3em;
+	float: right;
+	font-weight: 700;
+	color: #fff;
+	outline: none;
+	border: none;
+	text-shadow: 0 1px 0 #fff;
+	opacity: .8;
+	line-height: 1;
+	font-size: 16px;
+	padding: 0;
+	cursor: pointer;
+	background: 0 0;
+	border: 0
+}
+
+@keyframes toast-in-right {
+	from {
+	  transform: translateX(100%);
+	}
+	to {
+	  transform: translateX(0);
+	}
+}
+
+@keyframes toast-in-left {
+	from {
+		transform: translateX(-100%);		
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes toast-in-top {
+    from {
+		transform: translateY(-100%);		
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+@keyframes toast-in-bottom {
+    from {
+		transform: translateY(100%);		
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+@keyframes fade-in {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@keyframes fade-out {
+    100% {opacity:1;}
+    0% {opacity:0;}
+}
+
+@keyframes slide {
+    100% {width:100%;}
+    0% {width:0%;}
+}
+
+@keyframes slide-half {
+    100% {width:50%;}
+    0% {width:0%;}
+}
+
+
+/*------------transition styles------------*/
+#ButtonGroupTaskGroupSelections {
+    animation: fade-in ease .7s;
+}
+
+#DivAddTask {
+    animation: fade-in ease .7s;
+}
+
+#DivTMSTasks {
+    animation: fade-in ease .7s;
+}
+
+#DivTMSActions {
+    animation: fade-in ease .7s;
+}
+
+#DivAddAction {
+    animation: fade-in ease .7s;
+}
+
+#DivTMSCreateTasks {
+    animation: fade-in ease .7s;
+}
+
+.fade-in-animation {
+    animation: fade-in ease .7s;
+}
+/*-------------------------------------*/
+
+#DivTMSMain div.tableFrame{    
+    overflow: auto !important;  
+    height: calc(100vh - 240px);
+} 
+
+#DivTMSMain div.tableFrame tbody {
+    display: block !important;
+    /*height: 50vh !important;*/
+    /*overflow: hidden !important;  */
+}
+
+#DivTMSMain div.tableFrame thead, #DivTMSMain tbody tr {
+    display:table !important;
+    width:100% !important;
+    vertical-align: middle !important;
+    table-layout:fixed !important;
+}
+
+#DivTMSMain div.tableFrame thead {
+    background-color: #0f4c81;
+    color: white;
+    width: calc( 100% - 1em ) !important;
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    top: 0;
+    bottom: 100%;
+    z-index: 10; 
+    text-align: center;
+}
+
+#DivTMSMain div.tableFrame table {  
+    min-width: 100vw !important;
+} 
+
+/*remove 2 scripts below to remove freeze panes*/
+#DivTMSActions div.tableFrame th:nth-child(1) { 
+    left: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #0f4c81;
+    border-right: 1px #ced4da solid;
+}
+
+#DivTMSActions div.tableFrame td:nth-child(1) {
+    position: -webkit-sticky !important;
+    position: sticky !important; 
+    width: 120px !important;
+    min-width: 120px !important;
+    max-width: 120px;
+    left: 0;
+    z-index: 1; 
+    background-color: #0f4c81;
+    border-right: 1px #ced4da solid;
+    text-align: center;
+    vertical-align: middle !important; 
+} 
+
+#DivTMSTasks div.tableFrame th:nth-child(1) { 
+    left: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #0f4c81;
+    border-right: 1px #ced4da solid;
+}
+
+#DivTMSTasks div.tableFrame td:nth-child(1) {
+    position: -webkit-sticky !important;
+    position: sticky !important; 
+    width: 120px !important;
+    min-width: 120px !important;
+    max-width: 120px;
+    left: 0;
+    z-index: 1; 
+    background-color: #0f4c81;
+    border-right: 1px #ced4da solid;
+    text-align: center;
+    vertical-align: middle !important; 
+} 
+/*-----------------------------------------------*/
+#DivTMSMain div.tableFrame td, div.tableFrame th {
+    width: 15em;
+    padding: 7px 10px 7px 10px !important;
+    vertical-align: top !important;
+    overflow-wrap: break-word;
+}
+
+#DivTMSMain div.tableFrame th {
+    padding: 5px !important; 
+}
+
+#TMSModalHeader .modal-header {
+    padding: 5px 5px 5px 15px;
+    background-color: #0f4c81;
+    color: white;
+}
+
+#TMSModalFooter .modal-footer {
+    background-color: #dadada;
+    padding: 0.25rem !important;
+}
+
+.flex-no-wrap {
+    flex-wrap: nowrap !important; 
+}
+
+.button-save-one {
+    background-image: url('../images/new.svg');
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: 16px;
+    width: 40px;
+    border-radius: 0rem;
+}
+
+.button-cancel-one {
+    background-image: url('../images/cancel.svg');
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: 16px;
+    width: 40px;
+    border-radius: 0rem;
+}
+
+.button-delete-one {
+    background-image: url('../images/minus.png');
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: 16px;
+    width: 40px;
+    border-radius: 0rem;
+}
+
+.button-enable-one {
+    background-image: url('../images/undo.svg');
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: 16px;
+    width: 40px;
+    border-radius: 0rem;
+}
+
+.button-edit-one {
+    background-image: url('../images/edit.svg');
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: 16px;
+    width: 40px;
+    border-radius: 0rem;
+    border-bottom: #1e7e34 solid 1px;
+    border-top: #1e7e34 solid 1px;
+}
+
+.flex-arrow-up {
+    background-image: url('../images/or-up.svg');
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: 25px;
+    background-color: #7b7b7b;
+    width: 40px;
+    border-radius: 0rem;
+}
+
+.div-width {
+    width: 100%;
+}
+
+.rectangle-shape {
+    border-radius: 0px !important;
+    z-index: 0 !important
+}
+/*add this to tms ppi*/
+input, textarea, button, option {
+    cursor: pointer;
+}
+/*add this to tms ppi*/
+input:disabled ,textarea:disabled ,button:disabled, select:disabled  {
+    cursor: not-allowed;
+}
+
+.tms-title {
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #0f4c81;
+    height: 30px;
+    padding: 3px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+}
+
+.btn-selected {
+    font-weight: bold !important;
+    background-color: #252525 !important; 
+}
+
+.btn-not-selected {
+    width: 26px !important;
+    height: 26px;
+    border-radius: 15px !important; 
+    color: transparent !important; 
+    margin: 0px 10px 0px 10px;
+    font-size: 0px !important;
+    padding: 2px 0px 0px 2px !important;
+}
+
+.list-heading {  
+    align-items: baseline;
+    font-size: 13px;
+    font-weight: bold;
+    flex-direction: row;
+    display: flex;
+}
+
+.list-body {  
+    font-size: 14px !important; 
+    font-weight: normal !important;
+    /*min-width: 300px;
+    max-width: 520px;*/
+    margin: 0px;
+    flex: auto
+}
+
+.check-box-append { 
+    margin-left: .4rem !important;
+}
+ 
+.inputgrouptext-check-box-append { 
+    display: flex !important;
+    align-items: center !important; 
+    min-width: 40px !important;
+    max-width: 40px !important;
+}
+
+.top-input {
+    padding-bottom: 5px;    
+    flex-wrap: nowrap !important;
+}
+
+.react-select-style {  
+    font-weight: 400;
+    font-size: 15px;
+    width: 100% !important;
+    width: -moz-available !important;          
+    width: -webkit-fill-available !important;   
+    width: stretch !important;  
+} 
+
+.react-select-style > div {
+    border-radius: 0px !important;     
+} 
+
+.tms-buttons-table {
+    height: 24px;
+    width: 24px;
+    align-items: center !important;
+    margin: 0rem !important;
+    padding: 0px !important;
+    justify-content: center !important; 
+} 
+
+/*----------------------loading screen-------------------*/
+.loading-screen-on { 
+    opacity: 1; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    z-index: 3000;
+    align-items: center; 
+    justify-content: center;
+    font-size: 30px;  
+    display: flex; 
+    flex: auto;
+    overflow: hidden;
+}
+
+.loading-mask .sc-cube {
+    opacity: 1;
+    background-color: dodgerblue !important;
+}
+
+.loading-text {
+    position: absolute;
+    opacity: 1;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 90px;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/*.loading-mask{
+    opacity: .9;
+    display: flex;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 3000;
+    justify-content: center;
+    align-items: center;
+}*/
+
+@keyframes fade {
+    0% {opacity:1;}
+    25% {opacity:.5;}
+    50% {opacity:0;}
+    75% {opacity:.5;}
+    100% {opacity:1;}
+}
+/*---------------------------------------------------------*/
+#ButtonCreateTasks {
+    width: 180px;
+}
+
+#ButtonAddExistingTasks {
+    width: 160px;
+}
+
+.main {
+    display: flex;
+    flex: auto;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px; 
+    flex-direction: row;
+    padding: 8px;
+}
+
+.menu-buttons {
+    height: 55px;
+    width: 130px;
+    padding: 5px !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+}
+
+.menu-buttons-text {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.menu-div-buttons {
+    align-items: center;
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+}
+
+.main-buttons {
+    height: 35px; 
+    padding: 5px 10px 5px 10px !important;
+    font-size: 15px !important;
+    font-weight: 600 !important
+} 
+
+.main-button-icon {
+    margin-right: 10px
+}
+
+.tmsmain-div {    
+    height: inherit;
+    width: inherit; 
+    display: flex;
+    flex-direction:column; 
+    justify-content: center;
+    align-items: center; 
+    font-size: 8pt;  
+    z-index: 1;
+    position: relative; 
+}
+
+.tmsmain-div td {
+    padding: 0.4rem !important;
+    vertical-align: middle !important;
+}
+
+.tmsmain-buttons {
+    background-color: #EFF0FE;
+    width: 100%;
+    height: 65px;
+    padding: 5px;
+    padding-left: 10px;
+    text-align: left;
+}
+/*---------------------------------------------------------*/
+.tmsmain-datatables { 
+    flex-direction:row; 
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: baseline;
+}
+
+.notif { 
+    width: 24px; 
+}
+ 
+/*---------------------------------------------------------*/
+#DivTMSTasks {    
+    position: absolute;
+    width: 100%;
+    right: 0;
+}
+
+.highlight {
+    background-color: #a7d2ff !important;
+}
+
+.edit-highlight {
+    background-color: #01356d !important;
+    color: white;
+}
+
+#DivTMSTasks .td-date-picker {    
+    width: 100% !important;
+    text-align: center;
+    vertical-align: middle !important;
+    font-size: 12px;
+    padding: 5px !important;
+}
+
+#DivTMSTasks .td-date-picker .input-group {    
+    justify-content: center;
+}
+
+#DivTMSTasks .td-date-picker .form-control {   
+    font-size: 12px !important;
+    padding: 4px !important;
+    height: 30px;
+    max-width: 130px;
+}
+
+.tms-table-button-datepicker {
+    height: 30px !important;
+    width: 25px !important;
+    padding: 0px !important;
+    z-index: 0 !important;
+}
+
+#DivTMSTasks  div.tableFrame td:nth-child(2) {
+    width: 7rem !important;
+    text-align: center !important;
+    vertical-align: middle !important; 
+} 
+
+#DivTMSTasks svg{
+    outline: none !important; 
+}
+
+#DivTMSTasks .diplay-off  {   
+    display: none;
+}
+
+.div-row-update-icon {
+    padding-right: 5px;
+}
+
+/*---------------------------------------------------------*/
+.tmsactiontable-div {    
+    position: absolute;
+    width: 100%;    
+    right: 0;
+} 
+/*---------------------------------------------------------*/
+
+.hide-component {
+    /*visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.1s, opacity 0.1s linear;*/
+    display: none !important; 
+}
+
+/*---------------------------CreateTask------------------------------*/
+.tms-create-task-modal {
+    max-width: 80vw;
+    max-height: 80vh;
+}
+
+#ModalBodyCreateTasks .input-group-text {
+    border-radius: 0rem;
+    min-width: 170px;
+    text-align: left;
+    white-space: pre-wrap;
+    padding: 5px;
+    padding-top: 6px;
+    font-weight: bold;
+    font-size: 15px; 
+    align-items: baseline; 
+    min-height: -webkit-fill-available !important;
+} 
+
+.textarea-list {
+    max-height: 14vh !important;
+    min-height: 14vh !important;
+}
+
+.deleted-on-list {
+    background-color: #ffcece !important;
+}
+
+.div-list-sequence {
+    padding-left: 5px;
+}
+
+.tms-create-task {
+    display: flex !important;
+    width: 100%;
+    height: calc(100vh - 200px) !important;
+    vertical-align: top !important;
+    flex-direction: column !important; 
+    padding-top: 3px; 
+}
+
+.tms-create-task .form-group {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100%; 
+    height: 100%;
+    vertical-align: top;
+    align-items: flex-start;
+    font-size: 14px;
+    font-weight: bold;  
+}
+
+.tms-create-task .form-group > .input-group {
+    padding-bottom: 3px; 
+}
+
+.tms-create-task .app-task-group {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100%; 
+    height: 95%;
+    padding: 10px;
+
+}
+
+.tms-create-task .tasks-list {   
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    overflow: auto !important;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: -2px; 
+    margin-left: -2px; 
+    padding: 0px; 
+}
+
+.tms-create-task .tasks-list:hover{
+    cursor: pointer;
+}
+
+.tms-create-task .tasks-list-under {   
+    height: 100%;
+    flex: auto;
+    text-align: left;
+    width: min-content;
+    min-height: 75px;
+}
+
+.tms-create-task .pad-right {
+    padding-right: 5px !important;
+}
+
+.tms-create-task .row-flex {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.tms-create-task .height-width-flex {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.tms-create-task .input-group-text { 
+    min-width: 170px; 
+}
+
+.tms-create-task .max-w { 
+    display: flex !important;
+    flex-direction: column !important; 
+    width: 100%;
+} 
+
+.tms-create-task textarea {
+    resize: none;
+    display: inline-block; 
+    height: calc(100vh - 367px);
+}
+
+.tms-create-task .tasks-list-input-addon {
+    width: 40px !important;
+    height: 30px !important;
+    align-items: baseline;  
+}
+
+.tms-create-task .tasks-list-input-addon > .input-group-text { 
+    background-color: ghostwhite;
+    min-width: 40px;
+
+}
+
+.tms-create-task #FormGroupTaskList .btn-danger {
+    border: 1px solid rgba(0,0,0,.125); 
+}
+
+.tms-create-task #FormGroupTaskList {
+    padding-left: 10px !important;
+}
+
+.tms-create-task .sortable-list {
+    height: 100%;
+    overflow: auto;
+    width: 100%; 
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.tms-create-task .sortable-list > ul{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.tms-create-task .div-list-index-mandatory {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.tms-create-task .div-list-index-mandatory .list-is-mandatory {
+    margin-top: 10px;
+    margin-left: -7px;
+}
+
+.tms-create-task .div-save-close {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 5px;
+}
+
+.tms-create-task .main-buttons{
+    margin-left: 5px;
+}
+
+/*--------------------------TMSCreateApplication---------------------------*/ 
+/*#InputGroupAppGroupName {
+    align-items: baseline;
+}*/
+.check-active {
+    width: 10px;
+    height: 10px; 
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+.check-active-yes { 
+    background-color: limegreen;
+}
+
+.check-active-no { 
+    background-color: red;
+}
+
+#ModalBodyCreateApplication .input-group-text {
+    font-weight: bold !important;
+    width: 170px;
+    border-radius: 0rem;
+    align-items: baseline;
+} 
+
+#CheckboxIsActive {
+    margin: 0 !important;
+}
+
+#ModalBodyCreateApplication .list-group-item { 
+    flex: auto;
+}
+
+#ModalBodyCreateApplication .btn { 
+    z-index: 0;
+} 
+
+#ModalBodyCreateApplication .max-w > span {
+    width: 100% !important;
+    border-radius: 0rem;
+}
+
+#ModalBodyCreateApplication .app-list {
+    height: 35vh;
+    overflow: auto;
+    width: 100%; 
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+#ModalBodyCreateApplication .input-group {
+    flex-wrap: nowrap !important;
+}
+
+/*--------------------------TMSCreateTaskGroup---------------------------*/ 
+#ButtonGroupTaskGroupSelections button:hover { 
+    background-color: #252525 !important; 
+} 
+
+#ButtonGroupTaskGroupSelections .button-icon {
+    width: 13px;
+    height: 13px;
+    margin-bottom: 2px;
+    margin-right: 3px;
+    margin-left: 0px;
+}
+
+#ButtonGroupTaskGroupSelections .btn-selected { 
+    border-radius: 15px !important;  
+    margin: 0px 10px 0px 10px;
+}
+
+#ButtonGroupTaskGroupSelections {
+    align-items: center;
+}
+
+.taskgroup-footer {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+}
+
+.taskgroup-footer button {
+    width: 170px; 
+}
+
+.tms-modal-style{  
+    width: 90% !important;
+    flex: auto;
+    min-width: 70% !important;
+    max-width: 90% !important;
+    /*height: 100% !important;*/
+    min-height: 90% !important;
+    max-height: 95% !important;
+} 
+
+#ModalBodyCreateTaskGroup {
+    height: 47vh;
+}
+
+#ModalBodyCreateTaskGroup .is-active {
+    padding-left: 12px !important;
+    display: flex !important;
+    align-items: center !important; 
+    min-width: 40px !important;
+    max-width: 40px !important;
+    background-color: #b1f690;
+}   
+
+#ModalBodyCreateTaskGroup .list-group-item { 
+    flex: auto;
+}
+
+#ModalBodyCreateTaskGroup .div-email {
+    width: 100%;
+    flex: auto;
+    padding-right: 10px;
+}
+
+#DivEmail .input-group-text {
+    min-width: 180px !important;
+}
+
+#AlertEmailSearchNote {
+    margin-top: 5px !important;
+}
+
+#ModalBodyCreateTaskGroup .form-group {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100%; 
+    flex: auto;
+    height: 100%;
+    vertical-align: top;
+    align-items: flex-start;
+    font-size: 14px;
+    font-weight: bold;   
+    margin: 0;
+}
+
+#ModalBodyCreateTaskGroup .input-group-text {
+    border-radius: 0rem;
+    min-width: 210px;
+    text-align: left;
+    white-space: pre-wrap;
+    padding: 5px;
+    padding-top: 6px;
+    font-weight: bold;
+    font-size: 15px; 
+    align-items: baseline; 
+    min-height: 100% !important;
+    min-height: -webkit-fill-available !important;
+}
+
+#ModalBodyCreateTaskGroup textarea {
+    resize: none;
+    display: inline-block;
+    height: 97px;
+}
+
+.style-row {
+    display: flex !important;
+    flex-direction: row; 
+    width: 100%; 
+    justify-content: center
+}
+
+.style-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.notif-main-div {
+    display: flex; 
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.notif-data-count {
+    width: 24px;
+    padding-top: 2px;
+    height: 24px;
+    border-radius: 13px; 
+    color: white;
+    background-color: #0069d9;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.notif-data-count:hover {
+    cursor: default;
+}
+
+#ModalBodyCreateTaskGroup .checkbox-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: inherit;
+    flex:auto;
+    align-items: center;
+    background-color: white; 
+}
+
+#ModalBodyCreateTaskGroup .checkbox-group-checkbox {
+    margin-left: 10px;
+}
+
+#ModalBodyCreateTaskGroup .checkbox-label {
+    white-space: nowrap;
+    margin: -1px 0px 0px 35px;
+}
+ 
+#ModalBodyCreateTaskGroup .last {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    /*min-width: 70px;
+    max-width: 70px;*/
+    flex: auto;
+}
+
+#ModalBodyCreateTaskGroup .inputgrouptext-check-box-append {
+    border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important; 
+}
+
+#ModalBodyCreateTaskGroup .selection-checkboxes {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    min-width: 100%;
+}
+ 
+#ModalBodyCreateTaskGroup .taskgroup-list {
+    /*min-height: 83%;*/
+    height: 228px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: inherit; 
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+#ModalBodyCreateTaskGroup .taskgroup-list-container {
+    padding-left: 10px;
+    width: 100%; 
+}
+
+#ModalBodyCreateTaskGroup .taskgroup-list-container .input-group-prepend {
+    margin: 0px;
+}
+
+
+#ModalBodyCreateTaskGroup .max-w > span {
+    min-width: 100%;
+}
+
+#ModalBodyCreateTaskGroup .tasks-list-under {   
+    height: 100% !important;
+    min-width: calc(100% - 79px);
+    text-align: left;
+} 
+
+#DivTaskGroup .button-checkbox, .button-checkbox:focus {
+    border: none !important;
+    border-radius: 0px;
+    background-color: white !important;
+    color: #495057 !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    font-weight: bold; 
+    outline: 0 !important; 
+    flex: auto;
+    text-align: start; 
+    font-size: 15px;
+
+}
+
+
+/*----------TMSEmailSearch----------*/
+#ModalBodyEmailSearch .form-group { 
+    margin: 0px !important; 
+}
+
+#ModalBodyEmailSearch .email-list-container { 
+    width: 100%;  
+}
+
+#ModalBodyEmailSearch .max-w > span {
+    min-width: 100%;
+}
+
+#ModalBodyEmailSearch .input-group-text {
+    border-radius: 0rem;
+    min-width: 180px;
+    text-align: left;
+    white-space: pre-wrap;
+    padding: 5px;
+    padding-top: 6px;
+    font-weight: bold;
+    font-size: 15px; 
+    align-items: baseline; 
+    min-height: 100% !important;
+    min-height: -webkit-fill-available !important;
+}
+
+#ModalBodyEmailSearch .email-list {
+    /*min-height: 250px;*/
+    height: 180px;
+    overflow: auto;
+    width: 100%; 
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+#FormGroupEmailChoiceRadio .email-choice-label {
+    margin-left: 40px !important;
+}
+
+#FormGroupEmailChoiceRadio .form-check-input { 
+    margin-top: 0.2rem; 
+}
+
+#FormGroupEmailChoiceRadio .form-check-label {
+    font-size: 12px !important;
+} 
+
+#ModalBodyEmailSearch .list-group-item {
+    padding: 10px 10px 0px 10px;
+    flex: auto;
+}
+
+#ModalBodyEmailSearch .btn-group {
+    flex: auto;
+    width: 100%;
+}
+
+#ButtonGroupEmailChoice > button {
+    font-size: 12px;
+}
+
+.ldap-list-group {
+    padding-right: 1px;
+}
+
+.active-list-group-item {
+    background-color: lightcyan !important;
+    border-color: #1e7e34 !important;
+} 
+
+.alert-message-note {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px !important;
+    text-align: center;
+    margin: 0px 0px 5px 0px !important;
+}
+
+/*------TMSScheduleEmail------*/
+#DivWeeklyOption .input-group, #DivMonthlyOption .input-group, #DivQuarterlyOption .input-group {
+    padding-top: 5px;
+}
+
+#DivWeeklyOption .input-group-text {
+    min-width: 100px !important;
+}
+
+#DivWeeklyOption .style-row {
+    margin-bottom: -1px;
+} 
+
+#DivMonthlyOption, #DivQuarterlyOption .flex-no-wrap {
+    margin-bottom: -1px;
+} 
+
+#DivQuarterlyOption .checkbox-group {
+    min-width: 45px !important;
+    max-width: 45px;
+}
+
+#DivQuarterlyOption .input-group-text {
+    min-width: 100px;
+    flex: auto !important;
+}
+
+#DivQuarterlyOption .append-label{
+    flex: auto !important;
+}
+
+#DivQuarterlyOption .form-control{
+    width: 70px !important; 
+    border-radius: 0px !important;
+}
+
+/*------------------DivCriteriaSelection--------------------*/
+#DivCriteriaSelection .flex-no-wrap {
+    padding-bottom: 5px;
+}
+
+#ListGroupAppFilter .flex-no-wrap {
+    padding-bottom: 0px !important;
+}
+
+#DivCriteriaSelection .input-group-text {
+    min-width: 70px;
+}
+
+#DivEmailCriteria {
+    width: 160% !important; 
+}
+
+#DivEmailCriteria .input-group-text {
+    min-width: 150px;
+}
+
+#DivCriteriaSelection {
+    padding: 0px 10px 0px 0px;
+}
+
+#DivCriteriaSelection button {
+    flex:auto;
+}
+
+#DivCriteriaSelection button:focus {
+    font-weight: bold;
+}
+
+#DivButtonOr {
+    margin-right: 5px !important; 
+}
+
+.perc-active {
+    background-color: green !important;
+}
+
+.perc-inactive, perc-inactive:hover {
+    background-color: red !important;
+    text-decoration: line-through !important;
+    text-decoration-style: double !important;
+}
+
+#ListGroupAppFilter .list-group-item {
+    min-width: calc(100% - 80px);
+    flex: auto;
+}
+
+#DivCriteriaList {
+    width: 26vw;
+}
+
+#DivCriteriaList .flex-no-wrap {
+    padding-bottom: 5px;
+}
+
+#DivCriteriaList .flex-no-wrap .input-group-text{
+    min-width: 80px;
+}
+
+#DivCriteriaList .taskgroup-list{
+    height: 155px;
+}
+
+#DivCriteriaList .list-group-item {
+    padding: 5px 15px 5px 15px !important;
+}
+
+
+/*--------------TMSAddAction-----------------*/
+.tms-modal-add-action { 
+    max-width: 60vw; 
+    min-height: 85vh;
+    max-height: 85vh;
+}
+
+.file-upload td {
+    padding: 2px !important;
+}
+
+.button-upload-delete-icon {
+    height: 16px;
+    margin-bottom: 2px;
+}
+
+.button-upload-delete {
+    padding: 0px !important;
+    height: 21px;
+    width: 30px;
+}
+
+.file-upload tr:nth-of-type(odd){
+    background-color: #d3e8ff;
+}
+
+#ButtonAddFile {
+    padding: 0px 10px 0px 10px;
+}
+
+#DivAddAction {  
+    width: 100%; 
+}
+
+#DivAddAction .div-upload {
+    height: 85px;
+    overflow-y: scroll;
+    border: 1px solid #ced4da;
+    overflow-x: auto;
+}
+
+#DivAddAction .input-group-text {
+    border-radius: 0rem;
+    min-width: 170px;
+    text-align: left;
+    white-space: pre-wrap;
+    padding: 5px;
+    padding-top: 6px;
+    font-weight: bold;
+    font-size: 15px; 
+    align-items: baseline; 
+    min-height: -webkit-fill-available !important;
+} 
+
+#DivAddAction .input-group {
+    padding: 5px 0px 0px 10px !important;
+} 
+
+#ButtonAddFile {
+    width: 42px;
+}
+
+#DivAddAction .append-file-count {
+    text-align: center; 
+    align-items: center;
+    background-color: #0069d9;
+} 
+
+#DivAddAction .main-buttons {
+    width: 100px;
+}
+
+#DivAddAction textarea {
+    resize: none;
+    height: 16vh;
+}
+
+.footer-buttons {
+    text-align: end;
+    padding-top: 10px;
+}
+
+#ModalBodyAddStatus .input-group-text {
+    border-radius: 0rem;
+    min-width: 170px;
+    text-align: left;
+    white-space: pre-wrap;
+    padding: 5px;
+    padding-top: 6px;
+    font-weight: bold;
+    font-size: 15px; 
+    align-items: baseline; 
+    min-height: -webkit-fill-available !important;
+} 
+
+#ModalBodyAddStatus .input-group {
+    padding-bottom: 5px !important;
+    display: flex;
+}
+
+#ModalBodyAddStatus textarea {
+    resize: none;
+    height: 16vh;
+}
+
+#ModalBodyAddStatus .max-w { 
+    display: flex !important;
+    flex-direction: column !important; 
+    width: 100%;
+} 
+
+#ModalBodyAddStatus .status-list { 
+    height: 25vh;
+    overflow: auto;
+} 
+
+#ModalBodyAddStatus .list-group-item { 
+    flex: auto;
+}
+
+/*-----------------add task----------------*/
+.tms-add-task-modal {
+    max-width: 80vw;
+    min-height: 85vh;
+    max-height: 85vh;
+}
+
+#DivAddTask { 
+    width: 100%; 
+}
+
+#DivAddTask .btn {
+    z-index: 0 !important;
+}
+
+#DivAddTask .input-group-text {
+    border-radius: 0rem;
+    min-width: 180px;
+    text-align: left;
+    white-space: pre-wrap;
+    padding: 5px;
+    padding-top: 6px;
+    font-weight: bold;
+    font-size: 15px; 
+    align-items: baseline; 
+    min-height: -webkit-fill-available !important;
+} 
+
+#DivAddTask .flex-no-wrap {
+    padding-bottom: 5px;
+}
+#DivAddTask .max-w { 
+    display: flex !important;
+    flex-direction: column !important; 
+    width: 100%;
+} 
+#DivAddTask .task-list {
+    flex: 1;
+    overflow: auto;
+    width: 100%;
+    max-height: calc(100vh - 310px);
+    min-height: calc(100vh - 310px);
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+#DivAddTask .task-list .input-group {
+    border: #dfdfdf solid 1px;
+    padding: 0px;
+}
+
+#DivBodyAddTask .left-info {    
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-right: 5px;
+}
+
+#DivBodyAddTask .right-info {    
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+}
+
+#DivBodyAddTask .list-group-item { 
+    flex: auto;
+    padding-right: 5px;
+    border: none;
+}
+
+#DivBodyAddTask .date-on-list {
+    font-size: 12px;
+    width: 12em;
+    padding: 0px 10px 0px 10px;
+}
+
+#DivBodyAddTask .date-div {
+    font-family: system-ui;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 5px 10px 5px;
+}
+
+#DivBodyAddTask .date-title {
+    padding-bottom: 10px;
+}
+
+/*---------------Action Data Table-----------------*/
+#ModalBodyFileList .list-group-item { 
+    flex: auto;
+}
+
+#DivFileList {
+    max-height: 300px;
+    overflow: auto;
+}
+
+
+
+/*---------------TMS PPI Add Action-----------------*/
+#ModalTMSPPIAddAction {
+    width: 90% !important;
+    flex: auto;
+    min-width: 50% !important;
+    max-width: 50% !important;
+    /*height: 100% !important;*/
+    min-height: 90% !important;
+    max-height: 95% !important;
+}
+
+#DivTMSPPIAddAction .input-group-text {
+    border-radius: 0rem;
+    min-width: 130px;
+    max-width: 130px;
+    text-align: left;
+    white-space: pre-wrap;
+    padding: 5px;
+    padding-top: 6px;
+    font-weight: bold;
+    font-size: 15px; 
+    align-items: baseline; 
+    min-height: -webkit-fill-available !important;
+} 
+
+.tms-ppi-flex-no-wrap {
+    flex-wrap: nowrap !important; 
+}
+
+.tms-ppi-flex-row {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+}
+
+.tms-ppi-flex-column {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+}
+
+.tms-ppi-input-label {
+    background-color: white !important;
+}
+
+.tms-ppi-bottom-padding {
+    padding-bottom: 5px;
+}
+
+#DivTMSPPIAddAction textarea {
+    resize: none;
+    display: inline-block;
+    height: 10rem;
+}
+
+#DivTMSPPIAddAction .icon-required {
+    height: 12px;
+    width: 12px;
+    margin-right: 3px;
+}
+
+#ModalFooterTMSPPIAddAction .main-buttons {
+    height: 35px; 
+    padding: 5px 10px 5px 10px !important;
+    font-size: 15px !important;
+    font-weight: 600 !important
+} 
+
+#ModalFooterTMSPPIAddAction .main-button-icon {
+    margin-right: 10px
+}
+
